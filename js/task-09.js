@@ -11,7 +11,7 @@ const refs = {
 refs.btn.addEventListener(`click`, onFormSwitchColor);
 
 function onFormSwitchColor(event) {
-  refs.color.textContent = getRandomHexColor()
-  refs.body.style.backgroundColor = getRandomHexColor()
+  refs.color.textContent = getRandomHexColor();
+  const backgroundColor = refs.color.textContent;
+  refs.body.style.backgroundColor = backgroundColor;
 }
-
